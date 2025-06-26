@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*CONTENT*/
+  --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
+  --content-tertiary: #d9d9d9;
+  --content-brand: #c58d7e;
+  --color-inverse: #030203;
+
+  /*BACKGROUND*/
+
+  --background-primary: #358bb9;
+  --bg-secondary: #111012;
+  --bg-tertiary: #24222e;
+  --bg-brand: #c58de7;
+  --bg-gray: #3d3d3d;
+
+  /*ACCENT*/
+
+  --accent-pink: #d586e0;
+  --accend-blue: #91a1fa;
+  --accend-green: #77c0a1;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
+
+  --font-Sora: "Sora", sans-serif;
+  --font-RobotoFlex: "Roboto Flex", sans-serif;
+  --font-Roboto: "Roboto Mono", monospace;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6);
+}
+
+body::after {
+  background-image: url(/assets/img/bg-ground.png) no-repeat;
+}
+
+.container {
+  width: 100%;
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+}
