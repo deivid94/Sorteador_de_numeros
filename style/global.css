@@ -16,7 +16,7 @@
 
   /*BACKGROUND*/
 
-  --background-primary: #358bb9;
+  --background-primary: #020202;
   --bg-secondary: #111012;
   --bg-tertiary: #24222e;
   --bg-brand: #c58de7;
@@ -34,16 +34,19 @@
   --font-RobotoFlex: "Roboto Flex", sans-serif;
   --font-Roboto: "Roboto Mono", monospace;
 }
+
+.padding-global {
+  padding-inline: 2.1rem;
+}
 body {
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background: linear-gradient rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6);
-}
+  background-color: #020202;
+  color: var(--content-primary);
 
-body::after {
-  background-image: url(/assets/img/bg-ground.png) no-repeat;
+  font-family: var(--font-Sora);
 }
 
 .container {
@@ -51,4 +54,26 @@ body::after {
   max-width: 385px;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url(/assets/img/Shapes.png);
+
+  background-position: center top;
+  height: 100vh;
+  margin: 0;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    var(--content-primary) 0%,
+    var(--content-secondary) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }

@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-direction: column;
+    & div:nth-child(1){
+        margin-block: 2.5rem 1.25rem;
+        & h3 {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin-bottom: 2px;
+        }
+
+        & p {
+            font-size: 0.875rem;
+            font-weight: 100;
+        }
+    }
+}

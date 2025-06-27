@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.688rem;
+
+  margin: 6.813rem 2.875rem;
+
+  .logo {
+    transition: transform 1s;
+  }
+}
+.logo:hover {
+  transform: rotate(30deg);
+}
