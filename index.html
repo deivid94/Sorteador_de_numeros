@@ -44,23 +44,30 @@
           </p>
         </div>
 
-        <section class="sort">
-        <div>
-          <h3>NUMEROS</h3>
-          <span> 2 </span>
-        </div>
-        <div>
-          <h3>DE</h3>
-          <span> 1 </span>
-        </div>
-        <div>
-          <h3>DE</h3>
-          <span> 100 </span>
-        </div>
-        <div>
-          <button>Sortear</button>
-        </div>
-        </section>
+        <form class="sort" action="" method="POST">
+          <div>
+            <h3>NUMEROS</h3>
+            <input type="text" id="numero1" name="numero1" required />
+          </div>
+          <div>
+            <h3>DE</h3>
+            <input type="text" id="numero2" name="numero2" required />
+          </div>
+          <div>
+            <h3>ATE</h3>
+            <input type="text" id="numero3" name="numero3" required />
+          </div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" name="toggle" />
+              <span class="slider"></span>
+              <span class="text-button">Nao repetir numero</span>
+            </label>
+          </div>
+          <div>
+            <button class="button-submit" type="submit">Sortear</button>
+          </div>
+        </form>
       </main>
 
       <footer>
