@@ -44,18 +44,25 @@
           </p>
         </div>
 
-        <form class="sort" action="" method="POST">
+        <form id="formularioSorteio" class="sort" action="" method="POST">
           <div>
             <h3>NUMEROS</h3>
-            <input type="text" id="numero1" name="numero1" required />
+            <input
+              type="text"
+              min="1"
+              max="10"
+              id="numero1"
+              name="numero1"
+              required
+            />
           </div>
           <div>
             <h3>DE</h3>
-            <input type="text" id="numero2" name="numero2" required />
+            <input type="text" min="1" id="numero2" name="numero2" required />
           </div>
           <div>
             <h3>ATE</h3>
-            <input type="text" id="numero3" name="numero3" required />
+            <input type="text" min="1" id="numero3" name="numero3" required />
           </div>
           <div>
             <label class="switch">
