@@ -1,0 +1,8 @@
+.modal {
+    content: "";
+    width: 319px;
+    height: 294px;
+    background-color: rgba (#ccc, #ccc, #ccc, 0.3);
+    border: 0.5px solid #000;
+    
+}
