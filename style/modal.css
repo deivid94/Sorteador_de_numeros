@@ -6,25 +6,26 @@
   height: 100%;
   top: 75%;
   overflow: auto; /* Habilita o scroll se necessário */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.6
-  ); /* Cor de fundo cinza escuro semi-transparente */
+ 
 }
 
 /* Conteúdo do Modal */
 .modal-conteudo {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% do topo e centralizado horizontalmente */
+  margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 100%; /* Pode ser ajustado conforme a necessidade */
+  width: 100%; 
   max-width: 319px;
   text-align: center;
   position: relative;
   color: var(--accend-blue);
+
+   & p {
+    
+    font-weight: 600;
+    border: 1px solid red;
+  }
 }
 
 /* O botão de fechar (x) */
@@ -48,3 +49,8 @@
 .modal-hidden{
   display: none;
 } 
+#infoModal{
+ font-weight: bold;
+ font-size: 2rem;
+
+}

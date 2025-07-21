@@ -35,9 +35,8 @@ FimIntervaloDeNumerosSorteio.addEventListener("input", (e) => {
 });
 
 const modal = document.querySelector(".modal");
-const infoModal = document.querySelector(".infoModal");
+const infoModal = document.getElementById("infoModal");
 const fechar = document.querySelector(".fechar");
-console.log(fechar);
 
 const botaoSortear = document.getElementById("realizar-sorteio");
 botaoSortear.addEventListener("click", () => {
@@ -48,7 +47,7 @@ botaoSortear.addEventListener("click", () => {
   modal.classList.remove("modal-hidden");
 
   const resultado = RealizarSorteio(quantidade, inicio, fim);
-  infoModal.innerHTML = resultado.join(",");
+  infoModal.textContent = resultado.join(",");
 });
 
 fechar.addEventListener("click", () => {
