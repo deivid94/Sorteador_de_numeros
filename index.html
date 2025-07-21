@@ -53,16 +53,31 @@
               max="10"
               id="numero1"
               name="numero1"
+              value="1"
               required
             />
           </div>
           <div>
             <h3>DE</h3>
-            <input type="text" min="1" id="numero2" name="numero2" required />
+            <input
+              type="text"
+              min="1"
+              id="numero2"
+              name="numero2"
+              value="10"
+              required
+            />
           </div>
           <div>
             <h3>ATE</h3>
-            <input type="text" min="1" id="numero3" name="numero3" required />
+            <input
+              type="text"
+              min="1"
+              id="numero3"
+              name="numero3"
+              value="30"
+              required
+            />
           </div>
           <div>
             <label class="switch">
@@ -75,6 +90,12 @@
             <button id="realizar-sorteio" class="button-submit" type="submit">
               Sortear
             </button>
+          </div>
+          <div id="resultado" class="modal modal-hidden">
+            <div class="modal-conteudo">
+              <span class="fechar">&times;</span>
+              <p>RESULTADO DO SORTEIO: <span id="infoModal"></span></p>
+            </div>
           </div>
         </form>
       </main>

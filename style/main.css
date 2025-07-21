@@ -18,10 +18,12 @@ main {
   }
 
   & .sort {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
+    
 
     & div:nth-child(1) {
       margin: 0;
@@ -41,7 +43,11 @@ main {
       grid-column: 1/4 ;
       
     }
+
+
   }
+
+
 }
 
 .switch {

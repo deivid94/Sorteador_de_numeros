@@ -12,7 +12,6 @@ function RealizarSorteio(quantidadeVezes, NumeroInicial, NumeroFinal) {
     );
 
     resultado.push(numeroSorteado);
-    alert(resultado);
   }
   return resultado;
 }
@@ -35,11 +34,23 @@ FimIntervaloDeNumerosSorteio.addEventListener("input", (e) => {
   e.target.value = valor.replace(/[^\d]/g, "");
 });
 
+const modal = document.querySelector(".modal");
+const infoModal = document.querySelector(".infoModal");
+const fechar = document.querySelector(".fechar");
+console.log(fechar);
+
 const botaoSortear = document.getElementById("realizar-sorteio");
-botaoSortear.addEventListener("click", function () {
+botaoSortear.addEventListener("click", () => {
   const quantidade = quantidadeNumerosDeSorteio.value;
   const inicio = InicioIntervaloDeNumerosSorteio.value;
   const fim = FimIntervaloDeNumerosSorteio.value;
 
-  RealizarSorteio(quantidade, inicio, fim);
+  modal.classList.remove("modal-hidden");
+
+  const resultado = RealizarSorteio(quantidade, inicio, fim);
+  infoModal.innerHTML = resultado.join(",");
+});
+
+fechar.addEventListener("click", () => {
+  modal.classList.add("modal-hidden");
 });
